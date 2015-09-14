@@ -16,7 +16,7 @@
     <body>
         <div class="wrapper clearfix">
         <!-- CONTENT FOR WEBSITE -->
-            <header class="site header clearfix">
+            <header class="site_header clearfix">
                 <img src="img/conceptlogo.png">
                 <div class="contact">
                     <ul>
@@ -30,69 +30,72 @@
                 <a href="#">All Products</a>
             </div>
             <div class="main_content clearfix">
-                <div class="tablet_column_1 clearfix">
-                    <div class="splash_top clearfix">
-                        <h2>WOMEN'S SPLASH TOP</h2>
-                        <img src="img/splashtop-aqua.png">
+                <div class="product_content">
+                    <div class="tablet_column_1 clearfix">
+                        <h2 class="splash_top_image_title">WOMEN'S SPLASH TOP</h2>
+                        <div class="splash_top_image clearfix">
+                            <img src="img/splashtop-aqua.png">
+                        </div>
                         <div class="discount">
-                        <h3>40%off on all closeout items</h3>  
+                            <h3>40%off on all closeout items</h3>  
+                        </div>
                     </div>
-                </div>
-                <div class="tablet_column_2 clearfix">
-                    
-                    <div class="price">
-                        <h3 class="sale">$99</h3>
-                        <h3 class="after_discount">$59.99</h3>
+                    <div class="tablet_column_2 clearfix">
+                        
+                        <div class="price">
+                            <h3 class="sale">$99</h3>
+                            <h3 class="after_discount">$59.99</h3>
+                        </div>
+                   
+                
+                        <fieldset class="purchase_details clearfix">
+                            <div class="color">
+                                <h4>color:</h4>
+                                <select name="select-choice" id="select-choice">
+                                    <option value="choice_1">aqua</option>
+                                    <option value="choice_2">berry</option>
+                                    <option value="choice_3">surprise me</option>
+                                </select>
+                            </div>
+                            <div class="size">
+                                <h4>size:</h4>
+
+                                <select name="select-choice" id="select-choice">
+                                    <option value="choice_1">x-small</option>
+                                    <option value="choice_2">small</option>
+                                    <option value="choice_3">medium</option>
+                                    <option value="choice_4">large</option>
+                                    <option value="choice_5">x-large</option>
+                                </select>
+                            </div>
+                            <a class="chart_link"href="#">sizing chart</a>
+
+                            <div class="quantity">
+                                <h4>Qty.</h4>
+
+                                <select name="select-choice" id="select-choice">
+                                    <option value="choice_1">1</option>
+                                    <option value="choice_2">2</option>
+                                    <option value="choice_3">3</option>
+                                </select>
+                            </div>
+                            <div>
+                                <input class="add" type="submit" value="Add to Cart"/>
+                            </div>
+                            <div class="share">
+                                <a href="#">Share</a>
+                            </div>
+                        </fieldset>
                     </div>
-               
-            
-                    <fieldset class="purchase_details clearfix">
-                        <div class="color">
-                            <h4>color:</h4>
-                            <select name="select-choice" id="select-choice">
-                                <option value="choice_1">aqua</option>
-                                <option value="choice_2">berry</option>
-                                <option value="choice_3">surprise me</option>
-                            </select>
-                        </div>
-                        <div class="size">
-                            <h4>size:</h4>
+                    <article class="product_details tablet_column_1 clearfix">
+                        <h2>PRODUCT DETAILS</h2>
+                        <p>Concept Watersports Splash Top for Women boasts a large neck opening made of a tripanel polyurethane coated nylon with a hook-and-loop neck closure system. With plenty of ventilation around the neck and 2-ply waterproof, highly breathable, lightweight outer fabric, you can keep the light water off of your core without getting too hot of feeling stuffed in a dry top. Also features a sleeve pocket, sticky nylon waist with draw cord, stitched and taped seams, cone-shaped cuffs for added seal, and a reflective screen printed logo</p>
 
-                            <select name="select-choice" id="select-choice">
-                                <option value="choice_1">x-small</option>
-                                <option value="choice_2">small</option>
-                                <option value="choice_3">medium</option>
-                                <option value="choice_4">large</option>
-                                <option value="choice_5">x-large</option>
-                            </select>
-                        </div>
-                        <a class="chart_link"href="#">sizing chart</a>
+                        <p>Available Colors: Aqua or Berry</p>
 
-                        <div class="quantity">
-                            <h4>Qty.</h4>
-
-                            <select name="select-choice" id="select-choice">
-                                <option value="choice_1">1</option>
-                                <option value="choice_2">2</option>
-                                <option value="choice_3">3</option>
-                            </select>
-                        </div>
-                        <div>
-                            <input class="add" type="submit" value="Add to Cart"/>
-                        </div>
-                        <div class="share">
-                            <a href="#">Share</a>
-                        </div>
-                    </fieldset>
+                        <p>Available Sizes: X-Small, Small, Medium, Large, and X-Large</p>
+                    </article>
                 </div>
-                <article class="product_details tablet_column_1 clearfix">
-                    <h2>PRODUCT DETAILS</h2>
-                    <p>Concept Watersports Splash Top for Women boasts a large neck opening made of a tripanel polyurethane coated nylon with a hook-and-loop neck closure system. With plenty of ventilation around the neck and 2-ply waterproof, highly breathable, lightweight outer fabric, you can keep the light water off of your core without getting too hot of feeling stuffed in a dry top. Also features a sleeve pocket, sticky nylon waist with draw cord, stitched and taped seams, cone-shaped cuffs for added seal, and a reflective screen printed logo</p>
-
-                    <p>Available Colors: Aqua or Berry</p>
-
-                    <p>Available Sizes: X-Small, Small, Medium, Large, and X-Large</p>
-                </article>
 
                 <div class="suggested_products clearfix">
                     <h2>SUGGESTED PRODUCTS</h2>
@@ -111,6 +114,7 @@
                             <h3>$134.99</h3>
                         </div>
                     </div>
+                
                 </div>
             </div>
             <div class="navigation clearfix">

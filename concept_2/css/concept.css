@@ -13,27 +13,29 @@
 .clearfix {
   zoom: 1; /* ie 6/7 */
 }
-/*dark blue: #131f74
-light blue: #3da2e7;
-gray: #a1a1a1
-red: #c21820
-*/
+
+/***** GENERIC STYLES *************/
+/**********************************/
 body{
 	font-family:helvetica, sans-serif;
 	background-image: url(../img/"bodybg.gif");
-}
-img{
-	display:block;
-	margin:0 auto;
-	max-width:100%;
 }
 
 a{
 	color:white;
 	text-decoration:none;
 }
+
 li{
 	list-style:none;
+}
+
+img{
+	display:block;
+	margin:0 auto;
+	max-width:100%;
+
+}
 }
 .after_discount{
 	color:#c21820;
@@ -43,8 +45,7 @@ li{
 	text-decoration:line-through;
 
 }
-/***** GENERIC STYLES *************/
-/**********************************/
+
 .wrapper{
 
 	width:90%;
@@ -62,6 +63,9 @@ li{
 .contact{
 	display:none;
 }
+.navigation_tablet{
+	display:none;
+}
 .all_products a{
 	background-color:/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3da2e7+0,131f74+100 */
 	background: #3da2e7; /* Old browsers */
@@ -72,61 +76,50 @@ li{
 	background: -ms-linear-gradient(top,  #3da2e7 0%,#131f74 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #3da2e7 0%,#131f74 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3da2e7', endColorstr='#131f74',GradientType=0 ); /* IE6-9 */
-;
-border-radius:5px;
-display:block;
-width:100%;
-padding-top:20px;
-padding-bottom:20px;
-text-align:center;
+	;
+	border-radius:5px;
+	display:block;
+	width:100%;
+	padding-top:20px;
+	padding-bottom:20px;
+	text-align:center;
 }
-
 .splash_top_image{
 	float:left;
-	width:40%;
+	width:50%;
 }
-
-.splash_top_image_title {
-	font-size:1em;
-	display:block;
-	text-align:left;
-	color:#131f74;
-}
-
 
 .discount{
 	float:left;
-	width:10%;
+	width:18%;
 	border-top: 1px solid #a1a1a1;
 	border-bottom: 1px solid #a1a1a1;
-	width:10%;
+	
 	font-weight:lighter;
 	font-size:.8em;
 	margin-left:0;
-
-}
-.discount h3{
-	margin-top:5px;
-	margin-bottom:5px;
+	margin-right:2%;
+	vertical-align:top;
 
 }
 .price{
 	float:left;
 	width:20%;
-	margin-left:0;
+	margin-left:5%;
+	vertical-align:top;
+	margin-top:0;
 }
-.price h3{
-	margin-top:5px;
-	margin-bottom:5px;
+.after_discount{
+	color:red;
 }
-
 .purchase_details{
 	border:none;
 	padding:0;
+	clear:both;
 }
 
 .purchase_details h4,select{
-	display:block;
+	display:inline-block;
 }
 .chart_link{
 	color:#c21820;
@@ -184,6 +177,8 @@ text-align:center;
 .product_details p{
 	font-size:1em;
 }
+
+
 .suggested_products h2{
 	font-weight:lighter;
 	font-size:1.2em;
@@ -224,6 +219,7 @@ text-align:center;
 	margin-top:5px;
 	margin-bottom:20px;
 }
+
 .navigation{
 	margin-bottom:80px;
 }
@@ -296,54 +292,47 @@ header img{
     font-size: .9em;
     width: 30%;
     float:right;
+
+}
+.contact li{
+	text-align:right;
 }
 .contact a{
 	color:#3da2e7;
 }
-
 .all_products{
 	display:none;
 }
-
-
-.navigation{
+.navigation_tablet{
+	display:block;
 	float:left;
-	width:22%;
+	width:20%;
 }
+
 .product_content{
-	float:left;
-	width:50%;
+	display:block;
 }
-
-
 
 .suggested_products{
-	float: left;
+	float:right;
 	width:20%;
-	border-left:1px solid #a1a1a1;
-	padding-left:5%;
 }
+.navigation_mobile{
+	display:none;
+}
+
+.product_content{
+	float:left;
+	width:60%;
+}
+.suggested_products{
+	float:right;
+	width:15%;
+	padding-left:3%;
+	border-left:solid 1px gray;
+}
+
+
 .contact_footer{
 	display:none;
 }
-.footer_links_1{
-	float:left;
-	width:25%;
-}
-.footer_links_2{
-	float:left;
-	width:25%;
-}
-
-.copyright{
-	float:right;
-	width:30%;
-	margin-top:0;
-}
-
-
-
-/***** SPECIFIC STYLES ************/
-/**********************************/
-
-
