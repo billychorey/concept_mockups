@@ -26,15 +26,27 @@ a{
 	text-decoration:none;
 }
 
+a:hover { 
+    background-color: #48afee;
+}
+
 li{
 	list-style:none;
 }
+
+
 
 img{
 	display:block;
 	margin:0 auto;
 	max-width:100%;
 
+}
+.desktop_size{
+	display:none;
+}
+.desktop{
+	display:none;
 }
 }
 .after_discount{
@@ -88,6 +100,7 @@ img{
 	padding-top:20px;
 	padding-bottom:20px;
 	text-align:center;
+	margin-bottom:30px;
 }
 .product_content{
 	padding-left:2%;
@@ -106,14 +119,10 @@ img{
 }
 
 .discount_price{
-
-
 	text-align:right;
 	float:left;
 	width:30%;
 	vertical-align:middle;
-
-
 }
 .discount{
 	/*float:left;*/
@@ -162,6 +171,30 @@ img{
 	display:inline-block;
 }
 
+#select-choice{
+	-webkit-appearance:none;
+	
+	text-decoration: none;
+	color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fefefe+0,eeeeee+100 */
+	background: #fefefe; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fefefe 0%, #eeeeee 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fefefe 0%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fefefe 0%,#eeeeee 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fefefe 0%,#eeeeee 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fefefe 0%,#eeeeee 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+	;
+	width:78%;
+	margin:0;
+	
+	padding:5px;
+	/*border:1px solid #8a8a8a;*/
+	border-radius:5px;
+}
+
+
+
 .quantity{
 	clear:both;
 }
@@ -188,7 +221,6 @@ img{
 	background: -ms-linear-gradient(top,  #3da2e7 0%,#131f74 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #3da2e7 0%,#131f74 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3da2e7', endColorstr='#131f74',GradientType=0 ); /* IE6-9 */
-;
 	border-radius:5px;
 	display:block;
 	width:50%;
@@ -225,7 +257,6 @@ img{
 .product_details{
 	margin-top:40px;
 }
-}
 .product_details h2{
 	font-size:1.2em;
 	color:#131f74;
@@ -253,6 +284,8 @@ img{
 	font-weight:lighter;
 	font-size:1em;
 	margin-bottom:0;
+	margin-top:5px;
+	margin-right:5px;
 }
 
 .spray_skirt img{
@@ -266,6 +299,9 @@ img{
 	text-align:center;
 	font-weight:lighter;
 	font-size:1em;
+	width:80%;
+	margin-bottom:0;
+	margin-top:10px;
 }
 
 .suggested_prices h3{
@@ -274,7 +310,7 @@ img{
 }
 .suggested_prices{
 	text-align:center;
-	margin-top:5px;
+	margin-top:0px;
 	margin-bottom:20px;
 }
 
@@ -301,7 +337,6 @@ img{
 	background: -ms-linear-gradient(top,  #3da2e7 0%,#131f74 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #3da2e7 0%,#131f74 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3da2e7', endColorstr='#131f74',GradientType=0 ); /* IE6-9 */
-;
 	border-radius:5px;
 	display:block;
 	width:100%;
@@ -309,6 +344,9 @@ img{
 	padding-bottom:20px;
 	text-align:center;
 	margin-left:0;
+}
+.navigation a:hover{
+	color: #48afee;
 }
 
 footer{
@@ -337,98 +375,372 @@ footer ul{
 .copyright{
 	font-size:.75em;
 	margin-top:40px;
+	clear:both;
 }
 
+
+/*start mobile styles*/
 @media screen and (min-width: 680px){
-header img{
-	float:left;
-	width:35%;
-}
-.contact{
-	display: block;
-    font-weight: lighter;
-    font-size: .9em;
-    width: 30%;
-    float:right;
+	header img{
+		float:left;
+		width:35%;
+	}
+	.contact{
+		display: block;
+	    font-weight: lighter;
+	    font-size: .9em;
+	    width: 30%;
+	    float:right;
 
-}
-.contact li{
-	text-align:right;
-}
-.contact a{
-	color:#3da2e7;
-}
-.all_products{
-	display:none;
-}
-.navigation_tablet{
-	display:block;
-	float:left;
-	width:20%;
-}
-.navigation_tablet ul{
-	margin-top:0;
-}
-
-
-.product_content{
-	display:block;
-}
+	}
+	.contact li{
+		text-align:right;
+	}
+	.contact a{
+		color:#3da2e7;
+	}
+	.all_products{
+		display:none;
+	}
+	.navigation_tablet{
+		display:block;
+		float:left;
+		width:20%;
+	}
+	.navigation_tablet ul{
+		margin-top:0;
+	}
 
 
-.navigation_mobile{
-	display:none;
-}
-
-.product_content{
-	float:left;
-	width:54%;
-	margin-right:3%;
-	margin-left:3%;
-}
-.suggested_products{
-	float:right;
-	width:15%;
-	padding-left:2.5%;
-	padding-right:0;
-	border-left:solid 1px gray;
-	margin-left:0;
-	
-}
-.suggested_products h2{
-	font-size:1em;
-	text-align:center;
-	margin-top:0;
-}
-.suggested_produts h3{
-	text-align:center;
-}
+	.product_content{
+		display:block;
+	}
 
 
-.contact_footer{
-	display:none;
+	.navigation_mobile{
+		display:none;
+	}
+
+	.product_content{
+		float:left;
+		width:54%;
+		margin-right:3%;
+		margin-left:3%;
+	}
+	.suggested_products{
+		float:right;
+		width:15%;
+		padding-left:2.5%;
+		padding-right:0;
+		border-left:solid 1px gray;
+		margin-left:0;
+		
+	}
+	.suggested_products h2{
+		font-size:1em;
+		text-align:center;
+		margin-top:0;
+	}
+	.suggested_produts h3{
+		text-align:center;
+	}
+	.contact_footer{
+		display:none;
+	}
 }
-}
+/* end mobile styles */
+
+/* Desktop sizes*/
 @media screen and (min-width: 1000px){
 
-.navigation_desktop{
-	display:block;
-	float:right;
-	width:60%;
-	color:blue;
+	.desktop_size{
+		display:block;
+	}
+	.mobile_tablet{
+		display:none;
+	}
+
+	.desktop_wrapper{
+		width:80%;
+		margin:0 auto;
+	}
+	.desktop_head{
+		margin-bottom:0px;
+		padding-bottom:10px;
+		display:block;
+
+	}
+	.desktop_logo{
+		float:left;
+		width:30%;
+		height:;
+	}
+
+	.header_content{
+		float:right;
+		width:70%;
+	}
+	.header_content ul{
+		text-align:right;
+		font-size:1em;
+	}
+	.contact_desktop{
+		float:right;
+		margin-right:0%;
+		padding-left:none;
+		width:100%;
+
+	}
+	.contact_desktop ul{
+		margin-right:8%;
+	}
+
+	.contact_desktop li{
+		display:inline-block;
+		margin-left:8%;
+		text-align:right;
+	}
+	.contact_desktop a{
+		color:black;
+		font-weight:lighter;
+		text-align:right;
+	}
+
+
+	.navigation_desktop{
+		display: block;
+	    float: right;
+	    width: 100%;
+		
+
+	}
+	.navigation_desktop ul{
+		padding-left:0;
+	}
+	.navigation_desktop li{
+		display:inline-block;
+		margin-left:4%;
+	}
+	.navigation_desktop a{
+		color:#121b6a;
+		font-size:1em;
+		text-transform:capitalize;
+	}
+	.border{
+		border-top:solid 3px #cacaca;
+		margin-bottom:15px;
+		padding:0;
+	}
+	.wrapper_desktop_2{
+		width:80%;
+		margin:0 auto;
+
+	}
+	.desktop_images{
+		display:inline-block;
+		vertical-align:top;
+		clear:both;
+		
+		width:53%;
+	}
+	.desktop_suggested_products h2{
+		font-weight:lighter;
+		margin-bottom:20px;
+	}
+
+
+
+	.splash_top_image{
+		width:100%;
+		margin-bottom:20px;
+	}
+	.rash_guard{
+		float:left;
+		width:50%;
+	}
+	.spray_skirt{
+		float:right;
+		width:50%;
+	}
+	.body_copy_desktop{
+		display:inline-block;
+		
+		width:41%;
+		margin-left:5%;
+		vertical-align:top;
+		clear:both;
+	}
+	.body_copy_desktop h1{
+		width:100%;
+		font-weight:lighter;
+		font-size:1.5em;
+	}
+	.product_details_desktop{
+		width:100%;
+		display:block;
+		clear:both;
+		margin-top:20px;
+		clear:both;
+		padding-top:20px;
+
+	}
+	.product_details h2{
+		margin-top:40px;
+		clear:both;
+	}
+	.first_column{
+		float:left;
+		width:33%;
+		padding-right:3%;
+		vertical-align:top;
+		
+
+	}
+	.msrp{
+		
+		border-bottom:1px solid gray;
+	}
+	.msrp h2{
+		font-weight:;
+		margin-top:0;
+		margin-bottom:5px;
+		font-size:.9em;
+
+	}
+	.first_column h2{
+		margin-top:0;
+	}
+	.discount_desktop{
+		border-bottom:1px solid gray;
+	}
+	.discount_desktop h3{
+		font-size:.9em;
+	}
+	.share_this{
+		margin-top:30px;
+	}
+	.share_this a{
+		padding: 15px;
+		background-color:#121b6a;
+		border-radius:5px;
+		width:80%;
+		font-size:.8em;
+		margin:0 auto
+		;	
+	}
+	.second_column{
+		float:right;
+		width:60%;
+		padding-left:3%;
+		border-left: solid 1px gray;
+		padding-bottom:40px;
+
+	}
+	.color{
+		float:left;
+		width:60%;
+		margin-bottom:20px;
+		margin-top:20px;
+	}
+
+	#select-choice{
+		-webkit-appearance:none;
+		display: block;
+    	text-decoration: none;
+    	color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fefefe+0,eeeeee+100 */
+		background: #fefefe; /* Old browsers */
+		background: -moz-linear-gradient(top,  #fefefe 0%, #eeeeee 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #fefefe 0%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #fefefe 0%,#eeeeee 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #fefefe 0%,#eeeeee 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #fefefe 0%,#eeeeee 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+		;
+    	padding: 8px 22px;
+    	border:none
+    	border-radius:5px;
+	}
+
+	.color,.size{
+	width:55%;
+	
+	overflow:hidden;
+	background: url(../img/selectarrow.gif) no-repeat right;
+	border: 1px solid #8a8a8a;
+	border-radius:5px;
 
 }
-.navigation_desktop li{
-	display:inline-block;
+
+	.quantity{
+		float:right;
+		width:30%;
+		clear:none;
+		margin-bottom:20px;
+		margin-top:20px;
+
+	}
+	.size{
+		float:left;
+		width:60%;
+		margin-bottom:20px;
+	}
+	.chart_link{
+		float:right;
+		width:37%;
+		margin-bottom:20px;
+		color:#4593de;
+		font-size:.8em;
+	}
+
+
+	.add{
+		clear:both;
+		width: 90%;
+   		margin: 0 auto;
+    	padding: 10px;
+    	margin-top:0x;
+	}
+
+	footer{
+		width:100%;
+		display:block;
+		font-size:.8em;
+
+		padding-bottom:40px;
+		
+	}
+	footer a{
+		font-weight:lighter;
+	}
+	.desktop{
+		display:block;
+	}
+	.footer_wrapper{
+		width:80%;
+		margin:0 auto;
+	}
+	.desktop_links{
+		float:left;
+		width:70%;
+	}
+	.footer_desktop{
+		display:inline-block;
+		width:22%;
+		margin-right:2%;
+		vertical-align:top;
+		text-align:left;
+	}
+	.footer_wrapper ul{
+		padding-left:0;
+
+		
+	}
+	.copyright_desktop{
+		width:30%;
+		float:right;
+		text-align:right;
+
+	}
 }
-.navigation_desktop a{
-	color:blue;
-}
-
-
-
-
-
-
-
-}
+	/* ENd of Desktop media query */
